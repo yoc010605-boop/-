@@ -8,11 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
 <header class="site-header">
   <a class="brand" href="#home" aria-label="知境科技 LiberEye 首页"><img src="assets/libereye-logo.png" alt="知境科技 LiberEye 标志"><span class="brand-copy"><strong>知境科技</strong><small>LIBEREYE · SEE BEYOND</small></span></a>
+  <div class="site-tools" aria-label="网站显示设置"><button type="button" class="tool-button" id="language-toggle" aria-label="切换中英文">EN</button><button type="button" class="tool-button" id="theme-toggle" aria-label="切换浅色和深色模式" title="Light / Dark">◐</button></div>
   <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单"><span></span><span></span></button>
   <nav id="site-nav" class="site-nav" aria-label="主导航"><a href="#approach">我们的理念</a><a href="#product">产品探索</a><a href="#technology">技术路径</a><a href="#proof">成果与认可</a><a href="#journey">实地验证</a><a class="nav-cta" href="#contact">联系合作 <span>↗</span></a></nav>
 </header>
@@ -69,4 +71,5 @@
 <div class="modal" id="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel"><button class="modal-close" aria-label="关闭详情" data-close-modal>×</button><div class="modal-image-wrap"><img id="modal-image" src="assets/system-demo.png" alt=""></div><div class="modal-content"><span class="modal-eyebrow" id="modal-eyebrow">LIBEREYE / PRODUCT DETAIL</span><h2 id="modal-title">LiberEye 智能辅助系统</h2><p id="modal-summary"></p><div class="modal-detail-grid"><div><span>设计目标</span><p id="modal-goal"></p></div><div><span>工作方式</span><p id="modal-method"></p></div><div><span>当前探索</span><p id="modal-status"></p></div></div><button class="button button-dark modal-contact" data-close-modal-and-contact>讨论这一模块 ↗</button></div></div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="script.js"></script>
+<script src="enhancements.js"></script>
 </body></html>
